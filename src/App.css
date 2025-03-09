@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('./fonts/7-Vazir/Vazir-Medium.woff2') format('woff2'),
+      url('./fonts/7-Vazir/Vazir-Medium.woff') format('woff'),
+      url('./fonts/7-Vazir/Vazir-Medium.ttf') format('ttf');
+}
+
+* {
+  font-family: 'Vazir';
+  background-color: #F5F5F5;
+}
+
+/*lable form*/
+input:focus+label,
+textarea:focus+label {
+  transform: translateY(-25px);
+  color: #6CC4A1;
+}
+
+input[type="search"]:focus+label {
+  color: #fbd811
+}
+
+/*End lable form*/
+
+
+/*CkeckBox in the table*/
+input[type="checkbox"]:checked+span {
+  background-color: #646cff;
+  border-color: #646cff;
+}
+
+input[type="checkbox"]:checked+span .checkmark {
+  display: block;
+}
+
+input[type="checkbox"]:not(:checked)+span .checkmark {
+  display: none;
+}
+
+/*End CkeckBox in the table*/
